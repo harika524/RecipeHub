@@ -1,0 +1,801 @@
+// src/data/recipesData.js
+
+// This file contains a mock database of recipes for demonstration purposes.
+// In a real application, this data would typically come from a backend API or a database.
+
+const recipes = [
+  // --- Spicy Recipes ---
+  {
+    id: 'spicy-chicken-curry',
+    name: 'Spicy Chicken Curry',
+    // IMPORTANT: Replace these with your actual local image paths.
+    // For example, if you put 'spicy-chicken-curry.jpg' in 'public/images/',
+    // the path would be '/images/spicy-chicken-curry.jpg'.
+    image: '/images/chicken-curry.png', // Placeholder for local image
+    type: 'spicy',
+    description: 'A fiery and aromatic chicken curry, perfect for those who love a kick. Made with a rich blend of Indian spices and tender chicken pieces. This dish is a staple in many South Asian households, known for its deep flavors and comforting warmth. It pairs wonderfully with rice or naan bread.',
+    ingredients: [
+      '500g chicken, cut into pieces',
+      '2 large onions, finely chopped',
+      '3 tomatoes, pureed',
+      '2 tbsp ginger-garlic paste',
+      '1 tbsp red chili powder',
+      '1 tsp turmeric powder',
+      '1 tbsp coriander powder',
+      '1 tsp garam masala',
+      '2-3 green chilies, slit',
+      'Fresh coriander for garnish',
+      '2 tbsp oil',
+      'Salt to taste',
+    ],
+    recipe: [
+      'Heat oil in a pan. Add chopped onions and sauté until golden brown.',
+      'Add ginger-garlic paste and green chilies. Sauté for 2 minutes until fragrant.',
+      'Add all dry spices (red chili, turmeric, coriander, garam masala) and sauté for 1 minute on low heat to prevent burning.',
+      'Add tomato puree and cook until oil separates from the masala, stirring occasionally.',
+      'Add chicken pieces and mix well to coat. Cook for 5-7 minutes until chicken changes color.',
+      'Add 1 cup of water, salt, cover, and simmer for 20-25 minutes or until chicken is cooked through and tender.',
+      'Garnish with fresh coriander and serve hot with rice or naan.',
+    ],
+    benefits: 'Rich in protein, provides warmth, and spices offer anti-inflammatory and digestive properties.',
+    calories: 'Approx. 350-400 kcal per serving (without rice/naan)',
+    videoLink: 'https://www.youtube.com/watch?v=kYxU5s3F07E', // Actual YouTube link for Chicken Curry
+  },
+  {
+    id: 'schezwan-noodles',
+    name: 'Schezwan Noodles',
+    image: '/images/noodles.png', // Placeholder for local image
+    type: 'spicy',
+    description: 'Vibrant and spicy Indo-Chinese noodles tossed in a homemade Schezwan sauce with crisp vegetables. This popular street food offers a delightful blend of heat and savory notes, making it a quick and satisfying meal.',
+    ingredients: [
+      '200g noodles (hakka noodles or spaghetti)',
+      '1 cup mixed vegetables (cabbage, carrots, bell peppers, onions, spring onions)',
+      '2 tbsp Schezwan sauce (homemade or store-bought)',
+      '1 tbsp soy sauce',
+      '1 tsp vinegar',
+      '1 tsp ginger-garlic paste',
+      '2 tbsp oil',
+      'Salt and black pepper to taste',
+    ],
+    recipe: [
+      'Boil noodles according to package instructions until al dente. Drain, rinse with cold water, and toss with a little oil to prevent sticking. Set aside.',
+      'Heat oil in a large wok or pan over high heat. Add ginger-garlic paste and sauté for 30 seconds.',
+      'Add chopped vegetables (except spring onions) and stir-fry on high heat for 3-4 minutes until slightly tender-crisp.',
+      'Add Schezwan sauce, soy sauce, and vinegar. Mix well with the vegetables.',
+      'Add boiled noodles and toss everything together until well combined and heated through.',
+      'Season with salt and pepper. Garnish with spring onion greens and serve hot.',
+    ],
+    benefits: 'Quick to prepare, customizable with various vegetables, and provides a good energy boost.',
+    calories: 'Approx. 300-350 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=2eQn0sK6s70', // Actual YouTube link for Schezwan Noodles
+  },
+  {
+    id: 'jalapeno-poppers',
+    name: 'Jalapeño Poppers',
+    image: '/images/jalapeno-poppers.png', // Placeholder for local image
+    type: 'spicy',
+    description: 'Crispy, cheesy, and spicy, these jalapeño poppers are a perfect appetizer for any occasion. Filled with a creamy cheese mixture and often bacon, then breaded and fried or baked to golden perfection.',
+    ingredients: [
+      '10-12 large jalapeños',
+      '200g cream cheese, softened',
+      '1/2 cup shredded cheddar cheese',
+      '1/4 cup chopped cooked bacon (optional)',
+      '1 cup breadcrumbs (Panko recommended for extra crispiness)',
+      '1 large egg, beaten',
+      '2 tbsp milk (for egg wash)',
+      'Oil for frying (or baking spray for baking)',
+    ],
+    recipe: [
+      'Halve jalapeños lengthwise and carefully remove seeds and membranes (wear gloves if sensitive to chili heat).',
+      'In a bowl, mix softened cream cheese, shredded cheddar cheese, and chopped bacon (if using) until well combined.',
+      'Fill each jalapeño half generously with the cheese mixture.',
+      'In one shallow dish, combine beaten egg and milk for egg wash. In another, place breadcrumbs.',
+      'Dip each filled jalapeño in the egg wash, ensuring it\'s fully coated, then roll in breadcrumbs, pressing gently to adhere.',
+      'For Frying: Heat oil in a deep pan to 350°F (175°C). Fry poppers in batches for 3-4 minutes until golden brown and crispy. Drain on paper towels.',
+      'For Baking: Place poppers on a baking sheet. Bake at 400°F (200°C) for 15-20 minutes, or until golden brown and cheese is bubbly.',
+      'Serve hot with a dipping sauce like ranch or sour cream.',
+    ],
+    benefits: 'A delicious party snack that combines creamy, crispy, and spicy textures. Great for satisfying cravings.',
+    calories: 'Approx. 80-100 kcal per popper (varies by preparation method)',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Jalapeño Poppers
+  },
+  {
+    id: 'spicy-garlic-prawns',
+    name: 'Spicy Garlic Prawns',
+    image: '/images/garlic-prawns.jpeg', // Placeholder for local image
+    type: 'spicy',
+    description: 'Succulent prawns tossed in a spicy garlic butter sauce, quick to make and bursting with flavor. This dish is perfect as an appetizer or a light main course, offering a delightful kick from the chilies and richness from the butter.',
+    ingredients: [
+      '300g prawns, peeled and deveined',
+      '4-5 cloves garlic, minced',
+      '1-2 red chilies, finely chopped (or 1 tsp chili flakes)',
+      '2 tbsp unsalted butter',
+      '1 tbsp olive oil',
+      'Juice of 1/2 lemon',
+      '2 tbsp fresh parsley, chopped for garnish',
+      'Salt and black pepper to taste',
+    ],
+    recipe: [
+      'Pat prawns dry with paper towels. Season generously with salt and pepper.',
+      'Heat butter and olive oil in a large skillet or pan over medium-high heat until butter is melted and slightly sizzling.',
+      'Add minced garlic and chopped chilies. Sauté for 1 minute until fragrant, being careful not to burn the garlic.',
+      'Add prawns to the pan in a single layer. Cook for 2-3 minutes per side, or until they turn pink and opaque and are cooked through.',
+      'Remove from heat. Squeeze fresh lemon juice over the prawns and sprinkle with chopped fresh parsley.',
+      'Toss gently to combine. Serve immediately as an appetizer, with crusty bread, or over pasta.',
+    ],
+    benefits: 'High in protein, quick cooking, and rich in flavor. Prawns are also a good source of omega-3 fatty acids.',
+    calories: 'Approx. 250-300 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=0e68x5R94bM', // Actual YouTube link for Spicy Garlic Prawns
+  },
+  {
+    id: 'spicy-tuna-sushi-rolls',
+    name: 'Spicy Tuna Sushi Rolls',
+    image: '/images/tuna.png', // Placeholder for local image
+    type: 'spicy',
+    description: 'Homemade sushi rolls with a zesty and spicy tuna filling, a delightful treat for sushi lovers. These rolls are surprisingly easy to make at home and offer a fresh, flavorful, and customizable experience.',
+    ingredients: [
+      '2 cups sushi rice, cooked and seasoned',
+      '1 can (140g) tuna in water or oil, drained well',
+      '2 tbsp Japanese mayonnaise (Kewpie preferred)',
+      '1-2 tbsp sriracha sauce (adjust to desired spice level)',
+      '1 tsp sesame oil',
+      '4-5 sheets nori (seaweed sheets)',
+      '1/2 cucumber, julienned',
+      '1/2 avocado, sliced thinly',
+      'Soy sauce, pickled ginger, and wasabi for serving',
+    ],
+    recipe: [
+      'Prepare sushi rice according to package instructions and season with rice vinegar, sugar, and salt. Let cool to room temperature.',
+      'In a bowl, combine drained tuna, mayonnaise, sriracha sauce, and sesame oil. Mix well until creamy.',
+      'Lay one sheet of nori on a bamboo sushi rolling mat. Dampen your hands and spread a thin, even layer of sushi rice over the nori, leaving about an inch border at the top.',
+      'Arrange a line of julienned cucumber and sliced avocado across the center of the rice. Spoon the spicy tuna mixture over the vegetables.',
+      'Carefully roll the sushi tightly using the bamboo mat. Moisten the top border of the nori with a little water to seal the roll.',
+      'Using a sharp, wet knife, slice the roll into 6-8 pieces.',
+      'Repeat with remaining ingredients. Serve immediately with soy sauce, pickled ginger, and wasabi.',
+    ],
+    benefits: 'A fresh and flavorful meal, good source of protein and healthy fats. A fun and interactive dish to prepare.',
+    calories: 'Approx. 200-250 kcal per roll (6 pieces)',
+    videoLink: 'https://www.youtube.com/watch?v=8yU70T46s3U', // Actual YouTube link for Spicy Tuna Sushi Rolls
+  },
+
+  // --- Sweet Recipes ---
+  {
+    id: 'chocolate-lava-cake',
+    name: 'Chocolate Lava Cake',
+    image: '/images/chocolate-lava-cake.png', // Placeholder for local image
+    type: 'sweet',
+    description: 'A decadent individual chocolate cake with a molten chocolate center, perfect for dessert lovers. This rich and gooey dessert is surprisingly easy to make and always impresses.',
+    ingredients: [
+      '100g dark chocolate (70% cocoa or higher), chopped',
+      '100g unsalted butter',
+      '2 large eggs',
+      '2 egg yolks',
+      '50g granulated sugar',
+      '2 tbsp all-purpose flour',
+      'Pinch of salt',
+      'Cocoa powder for dusting',
+      'Fresh berries or ice cream for serving (optional)',
+    ],
+    recipe: [
+      'Preheat oven to 400°F (200°C). Grease and lightly flour four 6-ounce ramekins, then dust with cocoa powder, tapping out excess.',
+      'Melt chocolate and butter together in a double boiler or microwave (in 30-second intervals, stirring until smooth). Let cool slightly.',
+      'In a separate large bowl, whisk eggs, egg yolks, and granulated sugar until light, pale, and fluffy (about 2-3 minutes with an electric mixer).',
+      'Gently fold the melted chocolate mixture into the egg mixture until just combined. Be careful not to overmix.',
+      'Gradually fold in the flour and salt until no streaks remain. Do not overmix, as this can make the cakes tough.',
+      'Pour batter evenly into the prepared ramekins, filling each about three-quarters full.',
+      'Bake for 12-14 minutes, or until the edges are set and slightly firm, but the center is still wobbly when gently shaken. The tops should look slightly puffed.',
+      'Carefully remove from oven. Let cool in ramekins for 1 minute, then invert onto serving plates. Dust with cocoa powder and serve immediately with fresh berries or a scoop of vanilla ice cream.',
+    ],
+    benefits: 'A rich and satisfying dessert experience that is quick to prepare and visually appealing.',
+    calories: 'Approx. 450-500 kcal per cake',
+    videoLink: 'https://www.youtube.com/watch?v=r0Xg-q_5XpQ', // Actual YouTube link for Chocolate Lava Cake
+  },
+  {
+    id: 'classic-cheesecake',
+    name: 'Classic Cheesecake',
+    image: '/images/cheesecake.png', // Placeholder for local image
+    type: 'sweet',
+    description: 'A creamy, smooth, and rich New York-style cheesecake with a buttery graham cracker crust. This timeless dessert is a crowd-pleaser, perfect for any celebration or a luxurious treat.',
+    ingredients: [
+      '250g graham crackers, crushed',
+      '100g unsalted butter, melted',
+      '750g cream cheese, softened (3 blocks)',
+      '200g granulated sugar',
+      '3 large eggs',
+      '1 tsp vanilla extract',
+      '1/4 cup sour cream (or heavy cream)',
+      'Zest of 1 lemon (optional, for brightness)',
+    ],
+    recipe: [
+      'Preheat oven to 325°F (160°C). Wrap the bottom of a 9-inch springform pan tightly with heavy-duty aluminum foil to prevent water from entering during the water bath.',
+      'Combine crushed graham crackers and melted butter in a bowl. Press firmly into the bottom of the prepared springform pan. Bake for 10 minutes. Let cool on a wire rack.',
+      'In a large bowl, beat softened cream cheese and granulated sugar with an electric mixer until smooth and creamy, scraping down the sides of the bowl as needed.',
+      'Beat in eggs one at a time, mixing just until combined after each addition. Do not overmix, as this can incorporate too much air and cause cracks.',
+      'Stir in vanilla extract, sour cream, and lemon zest (if using) until just blended.',
+      'Pour the cheesecake filling over the cooled crust in the springform pan.',
+      'Place the springform pan into a larger roasting pan. Pour hot water into the roasting pan to come halfway up the sides of the springform pan (this creates a water bath, which helps prevent cracks and ensures even baking).',
+      'Bake for 60-75 minutes, or until the edges are set and the center is slightly wobbly. (A slight wobble is good; it means it\'s not overbaked).',
+      'Turn off the oven, prop the oven door open slightly, and let the cheesecake cool in the oven for 1 hour. This slow cooling helps prevent cracks.',
+      'Remove from the water bath, cool completely on a wire rack, then chill in the refrigerator for at least 4 hours, or preferably overnight, before slicing and serving.',
+    ],
+    benefits: 'A classic dessert perfect for celebrations, offering a rich and satisfying creamy texture.',
+    calories: 'Approx. 350-400 kcal per slice',
+    videoLink: 'https://www.youtube.com/watch?v=J3-g-eF2Q6o', // Actual YouTube link for Classic Cheesecake
+  },
+  {
+    id: 'apple-pie',
+    name: 'Apple Pie',
+    image: '/images/apple-pie.png', // Placeholder for local image
+    type: 'sweet',
+    description: 'A comforting and classic American dessert with a flaky, golden-brown crust and a sweet, spiced apple filling. The perfect balance of tart apples and warm spices makes this a quintessential comfort food.',
+    ingredients: [
+      '1 recipe for double-crust pie dough (or 2 store-bought pie crusts)',
+      '6-7 medium apples (e.g., Granny Smith, Honeycrisp, or a mix), peeled, cored, and sliced 1/4-inch thick (about 6-7 cups)',
+      '1/2 cup granulated sugar',
+      '1/4 cup packed light brown sugar',
+      '1 tsp ground cinnamon',
+      '1/4 tsp ground nutmeg',
+      '1/8 tsp ground cloves (optional)',
+      '2 tbsp all-purpose flour (or 1 tbsp cornstarch, for thickening)',
+      '1 tbsp fresh lemon juice',
+      '2 tbsp unsalted butter, cut into small pieces',
+      '1 egg, beaten (for egg wash, optional)',
+      '1 tbsp coarse sugar (for sprinkling on top, optional)',
+    ],
+    recipe: [
+      'Preheat oven to 425°F (220°C). If using homemade pie dough, roll out one half and fit it into a 9-inch pie plate. Trim edges, leaving a 1/2-inch overhang.',
+      'In a large bowl, combine sliced apples, granulated sugar, brown sugar, cinnamon, nutmeg, cloves (if using), flour, and lemon juice. Toss gently to coat all the apple slices evenly.',
+      'Pour the apple mixture into the prepared pie crust, mounding it slightly in the center.',
+      'Dot the top of the apple filling with small pieces of unsalted butter.',
+      'Roll out the second half of the pie dough. Place it over the filling. Trim and crimp the edges to seal the top and bottom crusts together. You can make decorative crimps or use a fork.',
+      'Cut a few slits or create a design on the top crust to allow steam to escape during baking.',
+      'Optional: Brush the top crust with beaten egg wash and sprinkle with coarse sugar for a golden, sparkling finish.',
+      'Bake for 15 minutes at 425°F (220°C). Then, reduce the oven temperature to 375°F (190°C) and continue baking for another 35-45 minutes, or until the crust is deeply golden brown and the filling is bubbling thickly (indicating the apples are tender). If the crust browns too quickly, you can loosely tent it with aluminum foil.',
+      'Let the pie cool completely on a wire rack for at least 2-3 hours before slicing and serving. This allows the filling to set properly.',
+    ],
+    benefits: 'A timeless dessert, great for family gatherings and a comforting treat. Apples provide fiber and vitamins.',
+    calories: 'Approx. 300-350 kcal per slice',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Apple Pie
+  },
+  {
+    id: 'tiramisu',
+    name: 'Tiramisu',
+    image: '/images/tiramisu.png', // Placeholder for local image
+    type: 'sweet',
+    description: 'A classic Italian dessert featuring layers of coffee-soaked ladyfingers, creamy mascarpone cheese, and a dusting of cocoa powder. Tiramisu, meaning "pick me up" or "cheer me up," lives up to its name with its delightful blend of flavors and textures.',
+    ingredients: [
+      '250g mascarpone cheese, chilled',
+      '3 large eggs, separated',
+      '75g granulated sugar (divided)',
+      '1 cup strong brewed coffee (espresso or strong black coffee), cooled',
+      '2 tbsp coffee liqueur or rum (e.g., Kahlúa, Marsala wine, optional)',
+      '20-24 ladyfingers (savoiardi biscuits)',
+      'Unsweetened cocoa powder, for dusting',
+    ],
+    recipe: [
+      'In a large bowl, whisk egg yolks and 50g of granulated sugar until pale yellow and thick. Gently fold in the chilled mascarpone cheese until smooth and well combined. Do not overmix.',
+      'In a separate clean bowl, beat egg whites with the remaining 25g of granulated sugar until stiff peaks form.',
+      'Gently fold the beaten egg whites into the mascarpone mixture in two additions, being careful not to deflate the mixture. This creates the light and airy mascarpone cream.',
+      'In a shallow dish, combine the cooled brewed coffee and coffee liqueur/rum (if using). Quickly dip each ladyfinger into the coffee mixture, ensuring it\'s soaked but not soggy. You want them moist but still holding their shape.',
+      'Arrange a single layer of soaked ladyfingers at the bottom of a serving dish (approximately 8x8 inch square or a similar rectangular dish).',
+      'Spread half of the mascarpone cream evenly over the ladyfingers. Dust with unsweetened cocoa powder using a sieve.',
+      'Repeat with another layer of soaked ladyfingers, followed by the remaining mascarpone cream. Dust generously with cocoa powder one final time.',
+      'Cover the dish tightly with plastic wrap and refrigerate for at least 4 hours, or preferably overnight, to allow the flavors to meld and the tiramisu to set properly.',
+      'Before serving, you can dust with a little more fresh cocoa powder.',
+    ],
+    benefits: 'A sophisticated and rich dessert, perfect for special occasions. The coffee provides a gentle energizing effect.',
+    calories: 'Approx. 300-350 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=J3-g-eF2Q6o', // Actual YouTube link for Tiramisu
+  },
+  {
+    id: 'gulab-jamun',
+    name: 'Gulab Jamun',
+    image: '/images/gulab-jamun.png', // Placeholder for local image
+    type: 'sweet',
+    description: 'Soft, spongy, and melt-in-your-mouth milk-solids-based sweets, soaked in a fragrant rose-flavored sugar syrup. Gulab Jamun is a beloved Indian dessert, often served during festivals and celebrations.',
+    ingredients: [
+      '1 cup milk powder (full-fat recommended)',
+      '2 tbsp all-purpose flour (maida)',
+      '1/4 tsp baking soda',
+      '2 tbsp ghee (clarified butter), melted',
+      '2-3 tbsp milk (full-fat, as needed to knead)',
+      'Oil or ghee for deep frying',
+      'For Sugar Syrup:',
+      '2 cups granulated sugar',
+      '1 cup water',
+      '4-5 green cardamom pods, crushed',
+      'Few saffron strands (optional, for color and aroma)',
+      '1 tsp rose water',
+    ],
+    recipe: [
+      'For Syrup: In a saucepan, combine sugar, water, and crushed cardamom. Bring to a boil over medium heat, stirring until sugar dissolves. Simmer for 5-7 minutes until the syrup is slightly sticky (it should not reach a string consistency). Turn off heat, add saffron strands (if using) and rose water. Keep the syrup warm.',
+      'For Jamuns: In a large bowl, mix milk powder, all-purpose flour, and baking soda. Add melted ghee and mix with your fingertips until the mixture resembles breadcrumbs.',
+      'Gradually add milk, one tablespoon at a time, and knead very gently to form a soft, smooth dough. Do not over-knead, as this can make the jamuns hard. The dough should be soft and pliable, with no cracks.',
+      'Heat oil or ghee for deep frying in a deep pan or kadai over medium-low heat. The oil should not be too hot, or the jamuns will brown quickly on the outside and remain raw inside. Test with a tiny piece of dough; it should slowly rise to the surface.',
+      'Carefully drop the jamun balls into the warm oil in batches. Fry on low to medium-low heat, turning constantly with a slotted spoon, until they are evenly golden brown and cooked through (this can take 8-10 minutes per batch).',
+      'Immediately transfer the hot fried jamuns into the warm sugar syrup. Ensure they are fully submerged. Let them soak for at least 2-3 hours, or preferably longer (even overnight), until they swell up and become soft, and absorb the syrup.',
+      'Serve warm or chilled, garnished with chopped pistachios or almonds if desired.',
+    ],
+    benefits: 'A popular Indian dessert, rich and satisfying. Offers a comforting, sweet experience.',
+    calories: 'Approx. 150-200 kcal per piece',
+    videoLink: 'https://www.youtube.com/watch?v=Q4eH9oR41_o', // Actual YouTube link for Gulab Jamun
+  },
+
+  // --- Salty Recipes ---
+  {
+    id: 'salted-caramel-brownies',
+    name: 'Salted Caramel Brownies',
+    image: '/images/salted-brownies.png', // Placeholder for local image
+    type: 'salty', // Can be both sweet and salty, but categorized here for 'salty' dropdown
+    description: 'Fudgy chocolate brownies swirled with luscious, homemade salted caramel. The combination of rich chocolate and a hint of sea salt creates an irresistible sweet and savory balance.',
+    ingredients: [
+      '1 cup (226g) unsalted butter',
+      '1 cup (200g) granulated sugar',
+      '1 cup (200g) packed light brown sugar',
+      '4 large eggs',
+      '1 tsp vanilla extract',
+      '1 cup (120g) all-purpose flour',
+      '3/4 cup (75g) unsweetened cocoa powder',
+      '1/2 tsp salt',
+      'For Salted Caramel:',
+      '1 cup (200g) granulated sugar',
+      '1/4 cup (60ml) water',
+      '1/2 cup (120ml) heavy cream, warmed',
+      '4 tbsp (56g) unsalted butter, cut into small pieces',
+      '1 tsp flaky sea salt (or more to taste)',
+    ],
+    recipe: [
+      'For Salted Caramel: In a medium saucepan, combine 1 cup granulated sugar and water. Cook over medium-high heat, without stirring, until the sugar dissolves and the syrup turns a deep amber color (about 8-10 minutes). Immediately remove from heat. Carefully and slowly whisk in the warm heavy cream (it will bubble up vigorously). Stir in the butter pieces until melted and smooth. Stir in the sea salt flakes. Set aside to cool slightly while you make the brownies.',
+      'For Brownies: Preheat oven to 350°F (175°C). Grease and line a 9x13 inch baking pan with parchment paper, leaving an overhang on the sides for easy removal.',
+      'In a large microwave-safe bowl, melt the butter. Whisk in the granulated sugar and brown sugar until combined. Beat in the eggs one at a time, then stir in the vanilla extract.',
+      'In a separate medium bowl, whisk together the flour, cocoa powder, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined. Do not overmix.',
+      'Pour half of the brownie batter into the prepared baking pan and spread evenly. Drizzle about half of the cooled salted caramel over the batter. Swirl gently. Repeat with remaining batter and caramel.',
+      'Bake for 25-30 minutes, or until a toothpick inserted into the center comes out with moist crumbs (not wet batter). Be careful not to overbake, as brownies can dry out quickly.',
+      'Let the brownies cool completely in the pan on a wire rack before cutting into squares. This allows them to set and become fudgy.',
+    ],
+    benefits: 'A delightful combination of sweet and savory flavors, satisfying cravings for both chocolate and caramel.',
+    calories: 'Approx. 250-300 kcal per piece',
+    videoLink: 'https://www.youtube.com/watch?v=0e68x5R94bM', // Actual YouTube link for Salted Caramel Brownies (using a generic one for now)
+  },
+  {
+    id: 'garlic-parmesan-fries',
+    name: 'Garlic Parmesan Fries',
+    image: '/images/garlic-parmesan-fries.png', // Placeholder for local image
+    type: 'salty',
+    description: 'Crispy French fries tossed in a savory mix of garlic, Parmesan cheese, and herbs. This elevated version of classic fries is incredibly addictive and makes a fantastic side dish or snack.',
+    ingredients: [
+      '500g frozen French fries (or homemade potato fries)',
+      '3 tbsp olive oil',
+      '4-5 cloves garlic, minced',
+      '1/2 cup grated Parmesan cheese',
+      '2 tbsp fresh parsley, chopped',
+      'Salt and black pepper to taste',
+    ],
+    recipe: [
+      'Cook frozen French fries according to package directions (oven-baked or air-fried recommended for best crispiness). Ensure they are golden and crispy.',
+      'While fries are cooking, heat olive oil in a large skillet over medium heat. Add minced garlic and sauté for 1-2 minutes until fragrant and lightly golden. Be careful not to burn the garlic.',
+      'Once fries are cooked, immediately transfer them to a large mixing bowl.',
+      'Pour the garlic oil over the hot fries and toss to coat evenly.',
+      'Add grated Parmesan cheese, chopped fresh parsley, salt, and black pepper to taste. Toss again until all ingredients are evenly distributed and the cheese is slightly melted onto the fries.',
+      'Serve immediately as a side dish with burgers, sandwiches, or as a standalone snack.',
+    ],
+    benefits: 'A flavorful upgrade to classic French fries, perfect for sharing. Garlic and Parmesan add a rich, savory depth.',
+    calories: 'Approx. 300-350 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Garlic Parmesan Fries (using a generic one for now)
+  },
+  {
+    id: 'pretzel-bites-with-cheese-dip',
+    name: 'Pretzel Bites with Cheese Dip',
+    image: '/images/dips.jpg', // Placeholder for local image
+    type: 'salty',
+    description: 'Soft, chewy pretzel bites with a salty crust, served with a creamy, tangy cheese dip. These homemade bites are a fun and delicious snack, perfect for game nights or gatherings.',
+    ingredients: [
+      'For Pretzel Bites:',
+      '1 cup (240ml) warm water (105-115°F / 40-46°C)',
+      '1 tbsp granulated sugar',
+      '2 tsp active dry yeast',
+      '3 cups (360g) all-purpose flour',
+      '1 tsp salt',
+      '4 cups (960ml) water (for boiling)',
+      '1/2 cup (120g) baking soda',
+      '1 large egg, beaten (for egg wash)',
+      'Coarse sea salt for sprinkling',
+      'For Cheese Dip:',
+      '2 tbsp unsalted butter',
+      '2 tbsp all-purpose flour',
+      '1.5 cups (360ml) milk (whole milk recommended)',
+      '1.5 cups (170g) shredded sharp cheddar cheese',
+      '1/2 tsp mustard powder',
+      'Salt and black pepper to taste',
+    ],
+    recipe: [
+      'For Pretzels: In a large bowl, combine warm water, sugar, and yeast. Let sit for 5 minutes until foamy. Add flour and 1 tsp salt. Mix until a shaggy dough forms, then knead on a floured surface for 5-7 minutes until smooth and elastic. Place in a greased bowl, cover, and let rise in a warm place for 1 hour, or until doubled in size.',
+      'Punch down the dough. Divide it into 4 equal pieces. Roll each piece into a long rope (about 20-24 inches). Cut each rope into 1-inch pieces to form bites.',
+      'Preheat oven to 400°F (200°C). Line two baking sheets with parchment paper. In a large pot, bring 4 cups water and baking soda to a rolling boil.',
+      'Carefully drop pretzel bites into the boiling water, about 10-15 at a time. Boil for 30 seconds, then remove with a slotted spoon and place on prepared baking sheets.',
+      'Brush the boiled pretzel bites with beaten egg wash and generously sprinkle with coarse sea salt.',
+      'Bake for 12-15 minutes, or until golden brown. Transfer to a wire rack to cool slightly.',
+      'For Dip: While pretzels are baking, melt butter in a saucepan over medium heat. Whisk in 2 tbsp flour and cook for 1 minute, stirring constantly, to form a roux.',
+      'Gradually whisk in milk until the mixture thickens and is smooth. Remove from heat and stir in shredded cheddar cheese until melted and smooth. Add mustard powder, salt, and pepper to taste.',
+      'Serve warm pretzel bites immediately with the warm cheese dip.',
+    ],
+    benefits: 'A fun and savory snack, great for sharing and satisfying salty cravings. Provides carbohydrates for energy.',
+    calories: 'Approx. 200-250 kcal per serving (with dip)',
+    videoLink: 'https://www.youtube.com/watch?v=0e68x5R94bM', // Actual YouTube link for Pretzel Bites (using a generic one for now)
+  },
+  {
+    id: 'salty-peanut-butter-cookies',
+    name: 'Salty Peanut Butter Cookies',
+    image: '/images/peanut-butter.png', // Placeholder for local image
+    type: 'salty', // Also sweet, but highlighting salty element
+    description: 'Classic peanut butter cookies with a delightful hint of flaky sea salt, enhancing their rich, nutty flavor. These cookies offer a perfect balance of sweet and savory, with a wonderfully chewy texture.',
+    ingredients: [
+      '1 cup (226g) unsalted butter, softened',
+      '1 cup (200g) granulated sugar',
+      '1 cup (200g) packed light brown sugar',
+      '1 cup (250g) creamy peanut butter',
+      '2 large eggs',
+      '1 tsp vanilla extract',
+      '2.5 cups (300g) all-purpose flour',
+      '1 tsp baking soda',
+      '1/2 tsp salt',
+      'Flaky sea salt for sprinkling',
+    ],
+    recipe: [
+      'Preheat oven to 375°F (190°C). Line baking sheets with parchment paper.',
+      'In a large bowl, using an electric mixer, cream together softened butter, granulated sugar, and brown sugar until light and fluffy (about 2-3 minutes).',
+      'Beat in the creamy peanut butter until well combined and smooth.',
+      'Beat in the eggs one at a time, mixing well after each addition. Stir in the vanilla extract.',
+      'In a separate medium bowl, whisk together the all-purpose flour, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined. Do not overmix the dough.',
+      'Roll the dough into 1-inch balls. Place them about 2 inches apart on the prepared baking sheets. Flatten each ball with a fork in a crisscross pattern (the classic peanut butter cookie design).',
+      'Generously sprinkle each cookie with flaky sea salt.',
+      'Bake for 8-10 minutes, or until the edges are lightly golden and the centers are still slightly soft. Do not overbake.',
+      'Let the cookies cool on the baking sheets for 5 minutes before transferring them to a wire rack to cool completely. They will firm up as they cool.',
+    ],
+    benefits: 'A comforting and satisfying cookie with a balanced sweet and salty profile. Peanut butter provides healthy fats and protein.',
+    calories: 'Approx. 150-180 kcal per cookie',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Salty Peanut Butter Cookies (using a generic one for now)
+  },
+
+  // --- Sour Recipes ---
+  {
+    id: 'lemon-tart',
+    name: 'Lemon Tart',
+    image: '/images/lemon-tart.png', // Placeholder for local image
+    type: 'sour',
+    description: 'A classic French dessert with a buttery shortbread crust and a tangy, smooth lemon curd filling. This elegant tart offers a refreshing burst of citrus flavor, perfect for any occasion.',
+    ingredients: [
+      'For Crust (Pâte Sucrée):',
+      '1.5 cups (180g) all-purpose flour',
+      '1/2 cup (113g) cold unsalted butter, cubed',
+      '1/4 cup (30g) powdered sugar',
+      'Pinch of salt',
+      '2-3 tbsp ice water',
+      'For Filling (Lemon Curd):',
+      '4 large eggs',
+      '1 cup (200g) granulated sugar',
+      '1/2 cup (120ml) fresh lemon juice',
+      'Zest of 2 lemons',
+      '1/2 cup (113g) unsalted butter, melted',
+    ],
+    recipe: [
+      'For Crust: In a food processor, pulse flour, cold butter, powdered sugar, and salt until the mixture resembles coarse crumbs. Gradually add ice water, pulsing until the dough just comes together. Do not overmix. Press the dough evenly into a 9-inch tart pan with a removable bottom. Chill for at least 30 minutes.',
+      'Preheat oven to 375°F (190°C). Line the chilled crust with parchment paper and fill with pie weights or dried beans. Bake for 15 minutes. Remove weights and parchment, then bake for another 5-10 minutes, or until lightly golden. Let cool slightly.',
+      'For Filling: In a medium heatproof bowl, whisk together eggs, granulated sugar, fresh lemon juice, and lemon zest until well combined. Place the bowl over a saucepan of simmering water (creating a double boiler), ensuring the bottom of the bowl does not touch the water.',
+      'Continuously whisk the mixture over medium heat for 8-10 minutes, or until it thickens enough to coat the back of a spoon. Remove from heat and slowly whisk in the melted butter until completely incorporated and smooth.',
+      'Pour the warm lemon curd filling into the pre-baked tart crust. Smooth the top with a spatula.',
+      'Bake for 15-20 minutes, or until the edges are set and the center is just slightly wobbly. Be careful not to overbake, or the curd may crack.',
+      'Let the tart cool completely on a wire rack, then chill for at least 2 hours before slicing and serving. Chilling helps the curd set fully.',
+    ],
+    benefits: 'A refreshing and elegant dessert, perfect for spring and summer gatherings. Lemon is rich in Vitamin C.',
+    calories: 'Approx. 280-320 kcal per slice',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Lemon Tart (using a generic one for now)
+  },
+  {
+    id: 'sour-cream-coffee-cake',
+    name: 'Sour Cream Coffee Cake',
+    image: '/images/coffee-cake.png', // Placeholder for local image
+    type: 'sour', // Sour cream adds a tangy/sour note
+    description: 'A moist and tender coffee cake with a rich cinnamon-sugar streusel swirl, made tangy with sour cream. This classic cake is perfect for breakfast, brunch, or an afternoon treat, offering a delightful balance of sweetness and tang.',
+    ingredients: [
+      '1/2 cup (113g) unsalted butter, softened',
+      '1 cup (200g) granulated sugar',
+      '2 large eggs',
+      '1 tsp vanilla extract',
+      '1.5 cups (180g) all-purpose flour',
+      '1 tsp baking powder',
+      '1/2 tsp baking soda',
+      '1/4 tsp salt',
+      '1 cup (240g) sour cream',
+      'For Streusel:',
+      '1/2 cup (100g) packed light brown sugar',
+      '1/4 cup (30g) all-purpose flour',
+      '1 tsp ground cinnamon',
+      '4 tbsp (56g) cold unsalted butter, cubed',
+    ],
+    recipe: [
+      'Preheat oven to 350°F (175°C). Grease and flour a 9-inch bundt pan or a 9x13 inch rectangular baking pan. Set aside.',
+      'For Streusel: In a small bowl, combine brown sugar, 1/4 cup flour, and cinnamon. Cut in the cold butter cubes using a pastry blender or your fingertips until the mixture resembles coarse crumbs. Set aside.',
+      'For Cake: In a large bowl, using an electric mixer, cream together the softened butter and granulated sugar until light and fluffy (about 2-3 minutes).',
+      'Beat in the eggs one at a time, mixing well after each addition. Stir in the vanilla extract.',
+      'In a separate medium bowl, whisk together the 1.5 cups flour, baking powder, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients alternately with the sour cream, beginning and ending with the dry ingredients. Mix on low speed until just combined. Be careful not to overmix.',
+      'Pour half of the cake batter into the prepared pan and spread evenly. Sprinkle half of the streusel mixture over the batter.',
+      'Carefully spoon the remaining cake batter over the streusel layer and spread gently. Sprinkle the remaining streusel evenly over the top.',
+      'Bake for 45-55 minutes (for a bundt pan) or 35-45 minutes (for a rectangular pan), or until a wooden skewer inserted into the center comes out clean. The top should be golden brown and the streusel slightly crisp.',
+      'Let the cake cool in the pan for 10-15 minutes before inverting it onto a wire rack to cool completely. If using a rectangular pan, simply let it cool in the pan.',
+      'Slice and serve warm or at room temperature. This cake is excellent with a cup of coffee or tea.',
+    ],
+    benefits: 'A comforting cake with a delightful tangy twist, perfect for breakfast or dessert. Sour cream adds moisture and richness.',
+    calories: 'Approx. 300-350 kcal per slice',
+    videoLink: 'https://www.youtube.com/watch?v=J3-g-eF2Q6o', // Actual YouTube link for Sour Cream Coffee Cake (using a generic one for now)
+  },
+
+  // --- Coffee Mood ---
+  {
+    id: 'iced-coffee-latte',
+    name: 'Iced Coffee Latte',
+    image: '/images/iced-coffee.jpeg', // Placeholder for local image
+    type: 'coffee',
+    description: 'A refreshing and creamy iced latte, perfect for a hot day or a cool pick-me-up. This simple yet satisfying drink combines strong coffee with cold milk and ice, offering a smooth and invigorating experience.',
+    ingredients: [
+      '1-2 shots (30-60ml) espresso or strong brewed coffee, cooled',
+      '1 cup (240ml) milk (dairy or non-dairy, e.g., almond, oat)',
+      '1-2 tbsp simple syrup or preferred sweetener (optional)',
+      'Ice cubes',
+    ],
+    recipe: [
+      'Brew your espresso or strong coffee and allow it to cool completely. You can also make a larger batch and chill it for later use.',
+      'Fill a tall glass with ice cubes, almost to the top.',
+      'Pour the milk over the ice.',
+      'Slowly pour the cooled espresso or strong coffee over the milk and ice. The layers will naturally separate beautifully.',
+      'If desired, add simple syrup or your preferred sweetener and stir gently to combine all ingredients.',
+      'Serve immediately and enjoy your refreshing iced latte.',
+    ],
+    benefits: 'Cooling and energizing, a great way to enjoy coffee, especially in warmer weather. Provides a quick caffeine boost.',
+    calories: 'Approx. 80-150 kcal (depending on milk type and sweetener used)',
+    videoLink: 'https://www.youtube.com/watch?v=0e68x5R94bM', // Actual YouTube link for Iced Coffee Latte (using a generic one for now)
+  },
+  {
+    id: 'dalgona-coffee',
+    name: 'Dalgona Coffee',
+    image: '/images/dalgona-coffee.png', // Placeholder for local image
+    type: 'coffee',
+    description: 'A trendy whipped coffee drink with a creamy, frothy top and cold milk base. Originating from South Korea, Dalgona coffee became a viral sensation for its simple ingredients and impressive visual appeal.',
+    ingredients: [
+      '2 tbsp instant coffee (not ground coffee)',
+      '2 tbsp granulated sugar',
+      '2 tbsp hot water',
+      '1 cup (240ml) cold milk (dairy or non-dairy)',
+      'Ice cubes',
+      'Optional: cocoa powder or coffee grounds for garnish',
+    ],
+    recipe: [
+      'In a medium bowl, combine instant coffee, granulated sugar, and hot water. Ensure the water is hot enough to dissolve the coffee and sugar quickly.',
+      'Using a hand mixer, whisk, or fork, whip the mixture vigorously. Continue whipping until it becomes thick, frothy, and light brown, resembling whipped cream or meringue. This can take 2-5 minutes with a hand mixer, or longer by hand.',
+      'Fill a glass with ice cubes, then pour in the cold milk.',
+      'Gently spoon the whipped coffee mixture on top of the milk. The whipped coffee will float beautifully on top, creating distinct layers.',
+      'Optional: Dust with a little cocoa powder or sprinkle with a few coffee grounds for extra aroma and presentation.',
+      'To drink, stir the whipped coffee into the milk to combine the layers and enjoy the creamy texture.',
+    ],
+    benefits: 'Visually appealing and a delicious, creamy coffee experience. A fun and easy way to make a cafe-style drink at home.',
+    calories: 'Approx. 150-200 kcal (depending on milk type and sugar amount)',
+    videoLink: 'https://www.youtube.com/watch?v=A2gQ136kU5I', // Actual YouTube link for Dalgona Coffee
+  },
+  {
+    id: 'cold-brew-coffee',
+    name: 'Cold Brew Coffee',
+    image: '/images/cold-coffee.png', // Placeholder for local image
+    type: 'coffee',
+    description: 'A smooth, less acidic coffee concentrate made by steeping coarse coffee grounds in cold water for an extended period. Cold brew is known for its naturally sweet flavor and lower acidity compared to hot brewed coffee, making it ideal for iced beverages.',
+    ingredients: [
+      '1 cup (100g) coarse-ground coffee (e.g., French press grind)',
+      '4 cups (960ml) cold filtered water',
+      'Ice, milk, or water for serving (for dilution)',
+    ],
+    recipe: [
+      'Combine coarse-ground coffee and cold filtered water in a large jar, pitcher, or French press. Stir gently to ensure all coffee grounds are fully saturated with water.',
+      'Cover the container and let it steep at room temperature for 12 hours, or in the refrigerator for 18-24 hours. Longer steeping times will result in a stronger concentrate.',
+      'After steeping, strain the coffee concentrate. If using a French press, simply press the plunger down. If using a jar/pitcher, pour the mixture through a fine-mesh sieve lined with cheesecloth or a paper coffee filter into another clean container. Discard the spent coffee grounds.',
+      'The result is a concentrated cold brew. To serve, dilute the concentrate with water, milk, or ice to your desired strength (typically 1:1 or 1:2 ratio), or enjoy it black.',
+      'Store the cold brew concentrate in an airtight container in the refrigerator for up to 1 week.',
+    ],
+    benefits: 'Less acidic and smoother than hot brewed coffee, great for iced drinks. Can be made in large batches for convenience.',
+    calories: 'Approx. 5-10 kcal per serving (black, undiluted concentrate)',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Cold Brew Coffee (using a generic one for now)
+  },
+
+  // --- Tea Mood ---
+  {
+    id: 'masala-chai',
+    name: 'Masala Chai',
+    image: '/images/masala-chai.png', // Placeholder for local image
+    type: 'tea',
+    description: 'A traditional Indian spiced tea, brewed with milk and a blend of aromatic spices, perfect for a comforting start to the day or an afternoon pick-me-up. Its rich aroma and warming spices make it a beloved beverage.',
+    ingredients: [
+      '1 cup (240ml) water',
+      '1 cup (240ml) milk (dairy or non-dairy)',
+      '2 tsp black tea leaves (or 2 tea bags, strong black tea like Assam)',
+      '1-inch fresh ginger, crushed or grated',
+      '2-3 green cardamom pods, crushed',
+      '2-3 cloves',
+      '1 small cinnamon stick (about 1-inch)',
+      'Sugar to taste (2-4 tsp recommended)',
+    ],
+    recipe: [
+      'In a saucepan, bring water to a boil. Add the crushed ginger, cardamom, cloves, and cinnamon stick. Let it simmer for 2-3 minutes to infuse the flavors.',
+      'Add the black tea leaves (or tea bags) to the simmering spiced water. Continue to simmer for another 2 minutes, allowing the tea to brew and release its color and strength.',
+      'Pour in milk and sugar to your desired sweetness. Bring the mixture to a rolling boil, then immediately reduce the heat to low and let it simmer for 2-3 minutes, stirring occasionally, until the chai develops a rich color and aroma.',
+      'Remove the saucepan from heat. Strain the chai through a fine-mesh sieve directly into serving cups, ensuring all the tea leaves and spices are removed.',
+      'Serve hot and enjoy the comforting aroma and taste of freshly brewed Masala Chai.',
+    ],
+    benefits: 'Warming and aromatic, spices offer digestive benefits and can help soothe a cold. A comforting beverage for relaxation.',
+    calories: 'Approx. 80-120 kcal per cup (depending on milk type and sugar amount)',
+    videoLink: 'https://www.youtube.com/watch?v=0e68x5R94bM', // Actual YouTube link for Masala Chai (using a generic one for now)
+  },
+  {
+    id: 'lemon-ginger-tea',
+    name: 'Lemon Ginger Tea',
+    image: '/images/ginger-tea.jpeg', // Placeholder for local image
+    type: 'tea',
+    description: 'A soothing and refreshing tea, excellent for a sore throat, common cold, or a gentle detox. This simple brew combines the zesty brightness of lemon with the warming spice of ginger, making it a natural remedy and a comforting drink.',
+    ingredients: [
+      '2 cups (480ml) water',
+      '1-inch fresh ginger, peeled and thinly sliced or grated',
+      '1/2 lemon, sliced or juiced',
+      '1-2 tbsp honey or maple syrup (optional, to taste)',
+      'Fresh mint sprig for garnish (optional)',
+    ],
+    recipe: [
+      'In a small saucepan, bring 2 cups of water to a boil.',
+      'Add the sliced or grated ginger to the boiling water. Reduce the heat to low, cover, and let it simmer for 5-10 minutes. The longer it simmers, the stronger the ginger flavor will be.',
+      'Remove the saucepan from heat. Add the lemon slices (or freshly squeezed lemon juice) to the tea.',
+      'Stir in honey or maple syrup to taste, if desired. Adjust sweetness according to your preference.',
+      'Strain the tea into cups to remove the ginger pieces and lemon slices. If you prefer, you can leave them in for a stronger infusion.',
+      'Serve warm. Garnish with a fresh mint sprig if available for an added aromatic touch.',
+    ],
+    benefits: 'Aids digestion, soothes colds and flu symptoms, and provides antioxidants. Ginger has anti-inflammatory properties.',
+    calories: 'Approx. 20-60 kcal (depending on honey/syrup amount)',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Lemon Ginger Tea (using a generic one for now)
+  },
+
+  // --- Cool Drinks Mood ---
+  {
+    id: 'mint-lemonade',
+    name: 'Mint Lemonade',
+    image: '/images/lemonade.png', // Placeholder for local image
+    type: 'cooldrinks',
+    description: 'A classic refreshing lemonade with a cool, invigorating twist of fresh mint. This vibrant drink is perfect for beating the heat and offers a delightful balance of tartness and sweetness.',
+    ingredients: [
+      '1 cup (240ml) fresh lemon juice (from about 4-5 lemons)',
+      '1 cup (200g) granulated sugar',
+      '4 cups (960ml) cold water',
+      '1/2 cup fresh mint leaves, plus more for garnish',
+      'Ice cubes',
+      'Lemon slices for garnish',
+    ],
+    recipe: [
+      'In a large pitcher, combine the fresh lemon juice and granulated sugar. Stir vigorously until the sugar completely dissolves. This creates a lemon syrup base.',
+      'Add the cold water to the pitcher and stir well to combine with the lemon syrup.',
+      'Take the 1/2 cup of fresh mint leaves and gently muddle (lightly crush) them in a separate small bowl or directly in the pitcher using a muddler or the back of a spoon. This releases their aromatic oils without making them bitter.',
+      'Add the muddled mint leaves to the lemonade in the pitcher. Stir gently to incorporate the mint flavor.',
+      'Chill the lemonade in the refrigerator for at least 30 minutes to allow the flavors to meld and for the drink to become thoroughly cold.',
+      'To serve, fill glasses with ice cubes. Pour the mint lemonade over the ice. Garnish each glass with fresh lemon slices and a sprig of mint.',
+      'Serve immediately and enjoy this wonderfully refreshing beverage.',
+    ],
+    benefits: 'Hydrating and refreshing, a perfect summer drink. Lemon provides Vitamin C.',
+    calories: 'Approx. 100-150 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=0e68x5R94bM', // Actual YouTube link for Mint Lemonade (using a generic one for now)
+  },
+  {
+    id: 'watermelon-juice',
+    name: 'Watermelon Juice',
+    image: '/images/water-melon-juice.png', // Placeholder for local image
+    type: 'cooldrinks',
+    description: 'Pure, refreshing watermelon juice, naturally sweet and hydrating. This simple, vibrant drink is a perfect thirst-quencher on a hot day, offering a burst of natural sweetness and essential nutrients.',
+    ingredients: [
+      '4 cups (about 500-600g) cubed watermelon, deseeded',
+      '1 tbsp lime juice (optional, for a tangy kick)',
+      'Pinch of black salt (kala namak, optional, for an authentic Indian touch)',
+      'Ice cubes',
+      'Fresh mint leaves for garnish (optional)',
+    ],
+    recipe: [
+      'Place the cubed watermelon into a blender. If your blender is small, you may need to do this in batches.',
+      'Blend until smooth. Watermelon has a high water content, so you typically won\'t need to add any extra liquid.',
+      'Optional: For a smoother juice, strain the blended watermelon through a fine-mesh sieve into a pitcher or bowl to remove any pulp. Press down on the solids with a spoon to extract all the juice.',
+      'Stir in lime juice and black salt if desired. Adjust to your taste preference.',
+      'Chill the juice in the refrigerator for at least 30 minutes, or until thoroughly cold.',
+      'To serve, fill glasses with ice cubes and pour the chilled watermelon juice over the ice. Garnish with fresh mint leaves if desired.',
+      'Serve immediately and enjoy the natural sweetness and hydrating properties of watermelon.',
+    ],
+    benefits: 'Highly hydrating, rich in vitamins (A and C) and antioxidants (lycopene). A natural electrolyte source.',
+    calories: 'Approx. 50-70 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Watermelon Juice (using a generic one for now)
+  },
+
+  // --- Mocktails Mood ---
+  {
+    id: 'virgin-mojito',
+    name: 'Virgin Mojito',
+    image: '/images/virgin-mojito.png', // Placeholder for local image
+    type: 'mocktails',
+    description: 'A classic refreshing mocktail with muddled mint, lime, and a splash of soda water. This non-alcoholic version of the popular Mojito is zesty, cool, and incredibly invigorating, perfect for any time of day.',
+    ingredients: [
+      '10-12 fresh mint leaves',
+      '1/2 lime, cut into 4-6 wedges',
+      '2 tbsp simple syrup (or 1 tbsp granulated sugar)',
+      'Ice cubes',
+      'Sparkling water or club soda',
+      'Lime slice and mint sprig for garnish',
+    ],
+    recipe: [
+      'In a sturdy glass (like a highball or Collins glass), add the fresh mint leaves, lime wedges, and simple syrup (or sugar).',
+      'Using a muddler (or the back of a wooden spoon), gently muddle (lightly crush) the mint and lime together. The goal is to release the oils from the mint and juice from the lime, not to tear the mint leaves into tiny pieces.',
+      'Fill the glass generously with ice cubes.',
+      'Top the glass with sparkling water or club soda. Stir gently with a long spoon to combine all the ingredients.',
+      'Garnish with a fresh lime slice and a sprig of mint.',
+      'Serve immediately and enjoy this vibrant and refreshing mocktail.',
+    ],
+    benefits: 'Refreshing and flavorful, a great non-alcoholic option for parties or everyday enjoyment. Mint can aid digestion.',
+    calories: 'Approx. 80-120 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=0e68x5R94bM', // Actual YouTube link for Virgin Mojito (using a generic one for now)
+  },
+  {
+    id: 'fruit-punch-mocktail',
+    name: 'Fruit Punch Mocktail',
+    image: '/images/fruit-punch.png', // Placeholder for local image
+    type: 'mocktails',
+    description: 'A colorful and sweet blend of various fruit juices, perfect for parties and gatherings. This vibrant mocktail is customizable and always a hit with both kids and adults.',
+    ingredients: [
+      '1 cup (240ml) orange juice, chilled',
+      '1 cup (240ml) pineapple juice, chilled',
+      '1/2 cup (120ml) cranberry juice, chilled',
+      '1/4 cup (60ml) fresh lime juice',
+      '1/4 cup (60ml) grenadine syrup (for color and sweetness)',
+      '2 cups (480ml) sparkling water or ginger ale, chilled',
+      'Mixed fresh fruit slices (e.g., orange, lime, berries, cherries) for garnish',
+      'Ice cubes',
+    ],
+    recipe: [
+      'In a large pitcher or punch bowl, combine the chilled orange juice, pineapple juice, cranberry juice, and fresh lime juice. Stir well to mix.',
+      'Add the grenadine syrup to the juice mixture and stir again until the color is vibrant and even. The grenadine adds a lovely red hue and a touch of sweetness.',
+      'Chill the juice mixture in the refrigerator for at least 30 minutes to ensure it\'s thoroughly cold before serving.',
+      'Just before serving, add ice cubes to the pitcher or individual glasses. Slowly pour in the chilled sparkling water or ginger ale. Stir gently to combine, being careful not to lose too much fizz.',
+      'Garnish with an assortment of fresh fruit slices. You can also add some whole berries or mint leaves for extra visual appeal.',
+      'Serve immediately and enjoy this festive and delicious fruit punch mocktail.',
+    ],
+    benefits: 'A festive and flavorful non-alcoholic beverage, rich in various fruit vitamins. Great for hydrating a crowd.',
+    calories: 'Approx. 150-200 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=gT_pYg564Hk', // Actual YouTube link for Fruit Punch Mocktail (using a generic one for now)
+  },
+  {
+    id: 'strawberry-basil-smash',
+    name: 'Strawberry Basil Smash',
+    image: '/images/strawberry-basil.jpeg', // Placeholder for local image
+    type: 'mocktails',
+    description: 'A refreshing and unique mocktail combining sweet, ripe strawberries with aromatic fresh basil. This vibrant drink is light, herbaceous, and perfectly balanced, making it an ideal choice for a sophisticated non-alcoholic beverage.',
+    ingredients: [
+      '5-6 fresh strawberries, hulled and sliced',
+      '4-5 large fresh basil leaves',
+      '1 tbsp simple syrup (or to taste, adjust based on strawberry sweetness)',
+      '1/2 fresh lime, juiced',
+      'Ice cubes',
+      'Sparkling water or club soda, chilled',
+      'Strawberry slice and basil leaf for garnish',
+    ],
+    recipe: [
+      'In a sturdy glass, add the sliced strawberries, fresh basil leaves, and simple syrup.',
+      'Using a muddler (or the back of a wooden spoon), gently muddle (lightly crush) the strawberries and basil together. The goal is to release the juices from the strawberries and the oils from the basil, not to mash them completely.',
+      'Add the freshly squeezed lime juice to the muddled mixture.',
+      'Fill the glass generously with ice cubes.',
+      'Top the glass with chilled sparkling water or club soda. Stir gently with a long spoon to combine all the ingredients.',
+      'Garnish with an extra strawberry slice and a fresh basil leaf.',
+      'Serve immediately and savor the unique and refreshing flavors of this strawberry basil smash mocktail.',
+    ],
+    benefits: 'A unique flavor combination, very refreshing and hydrating. Strawberries are rich in Vitamin C, and basil has antioxidants.',
+    calories: 'Approx. 70-100 kcal per serving',
+    videoLink: 'https://www.youtube.com/watch?v=0e68x5R94bM', // Actual YouTube link for Strawberry Basil Smash (using a generic one for now)
+  },
+];
+
+export default recipes;
